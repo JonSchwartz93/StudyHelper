@@ -1,30 +1,25 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+#StudyHelper
 
-### Purpose
-The Sinatra Skeleton:
+StudyHelper makes studying fun! This easy to use web application  allows users to create a deck of flashcards and test themselves on whatever topic they like. When you first get to the site, a user is taken to the homepage and sees a list of decks. The user plays a round by clicking on one of the available, default decks. If he/she is registered, they have the ability to create their own custom decks with custom cards. After a round, the user is presented with their statistics on how well they performed. If the user is logged in, he/she can then visit their profile to see statistics for all the rounds they've played.
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+When playing a round:
+- The user plays every card in the deck.
+- The cards are played in a random order.
+- For each card, the user is shown a prompt and responds by submitting a guess.
+- After submitting a guess, the user is informed whether or not the guess was correct and shown the correct answer.
+- The round continues until each card is answered correctly — after going through each card, cards answered incorrectly will be displayed again.
 
-### Quickstart
+Registered users have a profile page that showcases their flashcard history including:
+- Statistics for all rounds played, organized by deck and displayed in chronological order.
+- For each round, information such as the date the round was played, the number of cards in the deck, the number of cards answered correctly on the first guess, and the total number of guesses needed to complete the round are presented.
 
-1.  `bundle install`
-2.  `shotgun config.ru`
+## Team Members
 
-As needed, create models & migrations with the `rake` tasks:
+#### Daniel Homer
+https://github.com/dchome
 
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
+#### Kevin Perkins
+https://github.com/kevcorper
 
-### Contributing
-
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
-
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
-
-Be prepared to give and receive specific, actionable, and kind feedback!
+#### Jon Schwartz
+https://github.com/JonSchwartz93
